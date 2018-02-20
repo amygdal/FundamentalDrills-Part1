@@ -1,5 +1,6 @@
 package io.zipcoder;
 
+import com.sun.tools.corba.se.idl.InterfaceGen;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -180,6 +181,30 @@ public class ArrayDrillsTest {
         Integer[] inputArray2 = {2, 15};
         Integer[] expected = {1,20};
         Integer[] actual = arrayDrills.biggerTwo(inputArray1, inputArray2);
+        Assert.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void midThree1(){
+        Integer[] inputArray = {1, 2, 3};
+        Integer[] expected = {1, 2, 3};
+        Integer[] actual = arrayDrills.midThree(inputArray);
+        Assert.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void midThree2(){
+        Integer[] inputArray = {1, 2, 3, 4, 5};
+        Integer[] expected = {2, 3, 4};
+        Integer[] actual = arrayDrills.midThree(inputArray);
+        Assert.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void midThree3(){
+        Integer[] inputArray = {8, 6, 7, 5, 3, 0, 9};
+        Integer[] expected = {7, 5,3};
+        Integer[] actual = arrayDrills.midThree(inputArray);
         Assert.assertArrayEquals(expected, actual);
     }
 }

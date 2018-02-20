@@ -73,4 +73,14 @@ public class ArrayDrills {
     public Integer[] biggerTwo(Integer[] a, Integer[] b){
         return null;
     }
+
+    /**
+     * Given an array of ints of odd length, return a new array length 3 containing the elements from the middle of the array.
+     * The array length will be at least 3.
+     * example : midThree([1, 2, 3, 4, 5]); // Should return [2, 3, 4]
+     *           midThree([8, 6, 7, 5, 3, 0, 9]); // Should return [7, 5, 3]
+     */
+    public Integer[] midThree(Integer[] nums){
+        return null;
+    }
 }
