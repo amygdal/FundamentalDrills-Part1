@@ -10,7 +10,15 @@ public class ArrayDrills {
      *           firstLast(6, [1,2,3]); // Should return false
      */
     public Boolean firstLast(Integer value, Integer[] input){
-        return null;
+
+        //no for loop
+
+        Boolean answer = false;
+        if (input[0].equals(value) || input[input.length-1].equals(value)){
+            answer = true;
+        }
+
+        return answer;
     }
 
     /**
@@ -19,7 +27,15 @@ public class ArrayDrills {
      *           sameFirstLast([1,2,1]); // Should return true
      */
     public Boolean sameFirstLast(Integer[] input){
-        return null;
+
+        //no for loop
+
+        Boolean answer = false;
+        if (input[0].equals(input[input.length -1])){
+            answer = true;
+        }
+
+        return answer;
     }
 
 
@@ -30,7 +46,15 @@ public class ArrayDrills {
      *           commonEnd([1, 2, 3], [7, 3, 2]); // Should return false
      */
     public Boolean commonEnd(Integer[] input1, Integer[] input2){
-        return null;
+
+        //no for loop
+
+        Boolean answer = false;
+
+        if (input1[0].equals(input2[0]) || input1[input1.length-1].equals(input2[input2.length-1])){
+            answer = true;
+        }
+        return answer;
     }
 
     /**
@@ -39,6 +63,9 @@ public class ArrayDrills {
      *           rotateLeft([5, 11, 9]); // Should return [11,9,5]
      */
     public Integer[] rotateLeft(Integer[] input){
+
+        //use a for each loop
+
         return null;
     }
 
@@ -50,6 +77,8 @@ public class ArrayDrills {
      *           maxValue([5, 11, 9]); // Should return [11,11,11]
      */
     public Integer[] maxValue(Integer[] input){
+        //
+
         return null;
     }
 
@@ -61,6 +90,9 @@ public class ArrayDrills {
      *           middleWay([5, 1, 2, 9], [3, 4, 5, 5]); // Should return [3, 9]
      */
     public Integer[] middleWay(Integer[] input1, Integer[] input2){
+
+
+
         return null;
     }
 
